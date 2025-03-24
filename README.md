@@ -1,24 +1,39 @@
-# Learn and win
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-The powerful witch wizard has defeated and possessed your master and there is only one way to defeat him. You must overcome their ancient knowledge. A legend is your hope, it is said that a group of wardens lives in their temple in the forest, look for them and start your train to achieve victory.
+## Getting Started
 
-Desde que tengo memoria, nuestro pueblo vivió en paz bajo la protección de mi maestro. Él vencía con facilidad todos los peligros que nos acechaban. Sin embargo, como predijo, un día fatídico estaba por venir. Cuando me adoptó como su discípulo, me advirtió que mi misión sería derrotarlo, pues un cambio inevitable se avecinaba. Ese oscuro día llegó antes de lo esperado: el mago brujo, con un solo hechizo, venció a mi maestro y poseyó su cuerpo.
+First, run the development server:
 
-Sin haber completado mi entrenamiento, no tuve más opción que huir hacia el bosque, siguiendo las palabras de mi maestro, quien me aseguró que allí encontraría ayuda. Tras dos días de travesía, descubrí un misterioso fortín que parecía abandonado. Sin dudarlo, entré en busca de alimento, pero, encontré algo más que solo eso.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Por dentro, parecía no estar abandonado, habían mesas y libros e incluso antorchas que iluminaban el lugar. Y luego pude verlos a ellos, la leyenda que me contó mi maestro era cierta, eran ellos, los guardianes son reales...
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-***Some images and video***
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## About the content in the game
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-Knowledge Wardens looks to improve learning in some programming courses like **Programming Fundamentals**, **Data Structures** and **Web Programming**. An artificial intelligence teach you the content of the course. You can do questions about the content, in this way, learning is more interactive.
+## Learn More
 
-## About technologies in the game
+To learn more about Next.js, take a look at the following resources:
 
-This project uses a lot of technologies. So, in this section will be mentioned the most general and important:
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- Vercel SDK AI: Easy use of any artificial intelligence.
-- NextJS: Api that handles the artificial intelligence.
-- Unity: Engine to develop the game.
-- React: Development of the user interface in the web page
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+Para declarar un bucle for en JavaScript, se utiliza la siguiente sintaxis: \n \n```\nfor (inicialización; condición; incremento/decremento) {\n  // código a ejecutar en cada iteración\n}\n```\n\nDonde:\n\n- `inicialización`: se utiliza para inicializar la variable del bucle.\n- `condición`: se utiliza para establecer la condición que debe cumplirse para que el bucle continúe ejecutándose.\n- `incremento/decremento`: se utiliza para modificar la variable del bucle en cada iteración.\n\nPor ejemplo, un bucle for que imprima los números del 1 al 10 se puede declarar de la siguiente manera:\n\n```\nfor (var i = 1; i \u003C= 10; i++) {\n  console.log(i);\n}\n```\n\nEn este caso, la variable `i` se inicializa en 1, la condición es que `i` sea menor o igual a 10, y en cada iteración se incrementa `i` en 1. Dentro del bucle se utiliza `console.log()` para imprimir el valor de `i` en cada iteración.

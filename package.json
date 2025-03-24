@@ -1,12 +1,59 @@
 {
-  "name": "knowledge_wardens",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "knowledge-wardens",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev --turbopack",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "oxcheck": "oxlint --nextjs-plugin"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "@ai-sdk/azure": "^0.0.17",
+    "@ai-sdk/mistral": "^0.0.26",
+    "@auth/prisma-adapter": "^2.8.0",
+    "@libsql/client": "^0.8.1",
+    "@prisma/client": "^6.5.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "ai": "^3.3.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "dotenv": "^16.4.5",
+    "lucide-react": "^0.419.0",
+    "next": "15.2.3",
+    "next-auth": "5.0.0-beta.25",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-hook-form": "^7.52.2",
+    "react-icons": "^5.2.1",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss-animate": "^1.0.7",
+    "vercel": "^35.2.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "@types/react": "19.0.12",
+    "@types/react-dom": "19.0.4",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-next": "15.2.3",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-oxlint": "^0.5.0",
+    "oxlint": "^0.6.1",
+    "postcss": "^8.4.41",
+    "prisma": "^6.5.0",
+    "tailwindcss": "^3.4.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "overrides": {
+    "@types/react": "19.0.12",
+    "@types/react-dom": "19.0.4"
+  }
 }
