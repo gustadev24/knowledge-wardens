@@ -29,7 +29,7 @@ export function Header({ session }: HeaderProps) {
         md:w-3/6 rounded-3xl p-4 bg-main-text bg-cover bg-center"
         >
           <h3 className="text-gray-300 md:text-xl lg:text-2xl xl:text-2xl relative z-10 text-center">
-            The powerful witch wizard has possessed your master and there is only one way to defeat him. You must overcome their ancient knowledge. A legend is your hope, look for knowledge wardens and achieve the victory.
+            El poderoso hechicero ha poseído a tu amo y solo hay una manera de derrotarlo. Debes superar su antiguo conocimiento. Una leyenda es tu esperanza; busca a los guardianes del conocimiento y alcanza la victoria.
           </h3>
           <div className="absolute inset-0
           bg-black bg-opacity-80"
@@ -47,7 +47,7 @@ export function Header({ session }: HeaderProps) {
             session && <UserInfo name={name} email={email} />
           }
           {
-            !session && <span>Start your adventure</span>
+            !session && <span>Empieza tu aventura</span>
           }
         </h2>
       </div>

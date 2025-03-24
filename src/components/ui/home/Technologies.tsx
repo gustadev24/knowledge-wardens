@@ -71,7 +71,7 @@ export function Technologies() {
   return (
     <div className="w-full flex flex-col items-center justify-start px-10 my-20">
       <h1 className="text-4xl font-bold font-title">
-        Tecnologias
+        Tecnologías
       </h1>
       <div className="w-full overflow-hidden relative max-w-6xl" id="sliderAbout">
         <div id="sliderAbout-track">

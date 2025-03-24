@@ -25,7 +25,7 @@ export function Footer() {
           hover:text-gray-400"
         >
           {'> '}
-          Home
+          Inicio
         </Link>
         <Link
           href="/#about"
@@ -34,7 +34,7 @@ export function Footer() {
     hover:text-gray-400"
         >
           {'> '}
-          More Info
+          Sobre el proyecto
         </Link>
         <Link
           href="/#characters"
@@ -43,7 +43,7 @@ export function Footer() {
     hover:text-gray-400"
         >
           {'> '}
-          Characters
+          Personajes
         </Link>
       </div>
 

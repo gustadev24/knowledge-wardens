@@ -2,13 +2,13 @@ import Image from 'next/image';
 
 export function About() {
   return (
-    <section className="bg-btn-bg">
+    <section className="bg-btn-bg" id="about">
       <section className="bg-accent bg-cover bg-center
     min-h-[100vh] md:h-[100vh] w-full container
     flex flex-col justify-evenly items-center gap-4
     p-[4%] text-black"
       >
-        <h1 className="text-4xl md:text-6xl font-title font-bold text-center">About This</h1>
+        <h1 className="text-4xl md:text-6xl font-title font-bold text-center">Sobre el proyecto</h1>
 
         <div className=" md:p-10 grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 place-content-center">
 
