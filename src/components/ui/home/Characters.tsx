@@ -50,7 +50,7 @@ export function Characters() {
   const character = characters[currentCharacter];
 
   return (
-    <section className="bg-btn-bg">
+    <section className="bg-btn-bg" id="characters">
       <section
         className="bg-cover bg-center
       min-h-[100vh] md:h-[100vh] w-full
@@ -58,7 +58,7 @@ export function Characters() {
       md:p-[4%] text-black transition-colors duration-500"
         style={{ backgroundColor: character.color }}
       >
-        <h1 className="text-4xl md:text-6xl font-title font-bold">Characters</h1>
+        <h1 className="text-4xl md:text-6xl font-title font-bold">Personajes</h1>
 
         <div className="flex items-center justify-between
         md:gap-10 w-[90vw]"
