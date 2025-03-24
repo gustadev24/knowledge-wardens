@@ -2,7 +2,6 @@ import '@/app/globals.css';
 import { Silkscreen, Pixelify_Sans } from 'next/font/google';
 
 import { cn } from '@/lib/utils';
-import AuthProvider from '@/components/providers/AuthProvider';
 
 const silkscreen = Silkscreen({
   subsets: ['latin'],
@@ -28,9 +27,7 @@ export default function RootLayout({ children }: {
           pixelifySans.variable,
         )}
       >
-        <AuthProvider>
-          {children}
-        </AuthProvider>
+        {children}
       </body>
     </html>
   );

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaGithub } from 'react-icons/fa';
 
 export function Footer() {
@@ -16,7 +17,7 @@ export function Footer() {
       justify-center gap-8"
       >
 
-        <a
+        <Link
           href="/"
           className="text-white
             text-2xl
@@ -25,8 +26,8 @@ export function Footer() {
         >
           {'> '}
           Home
-        </a>
-        <a
+        </Link>
+        <Link
           href="/#about"
           className="text-white text-2xl
         md:text-3xl font-bold font-title pulse
@@ -34,8 +35,8 @@ export function Footer() {
         >
           {'> '}
           More Info
-        </a>
-        <a
+        </Link>
+        <Link
           href="/#characters"
           className="text-white text-2xl
         md:text-3xl font-bold font-title pulse
@@ -43,7 +44,7 @@ export function Footer() {
         >
           {'> '}
           Characters
-        </a>
+        </Link>
       </div>
 
       <div>
