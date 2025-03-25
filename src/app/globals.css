@@ -29,7 +29,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    
+
   }
 
   .dark {
@@ -64,6 +64,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-16rem * 5));
   }
@@ -73,6 +74,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-16rem * 5));
   }
@@ -80,7 +82,7 @@
 
 
 
-.pulse{
+.pulse {
   transition: all 0.2s ease-in-out;
 }
 
@@ -105,6 +107,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }

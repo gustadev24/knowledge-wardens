@@ -8,7 +8,7 @@ export function About() {
     flex flex-col justify-evenly items-center gap-4
     p-[4%] text-black"
       >
-        <h1 className="text-4xl md:text-6xl font-title font-bold text-center">Sobre el proyecto</h1>
+        <h1 className="text-3xl md:text-5xl font-title font-bold text-center">Sobre el proyecto</h1>
 
         <div className=" md:p-10 grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 place-content-center">
 

@@ -40,8 +40,8 @@ const developers = [
 
 export function Developers() {
   return (
-    <section className="p-8">
-      <h1 className="text-5xl font-title font-bold text-center mb-8">Desarrolladores</h1>
+    <section className="p-8 max-w-full overflow-hidden">
+      <h1 className="text-3xl md:text-5xl font-title font-bold text-center mb-8">Desarrolladores</h1>
       <div className="flex flex-wrap justify-center gap-5">
         {
           developers.map((developer) => (

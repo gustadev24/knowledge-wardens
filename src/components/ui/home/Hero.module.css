@@ -1,0 +1,13 @@
+.teleporter-gradient:hover::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(100% 50% at 50% 50%, #08a9da75 0%, #ffffff00 100%);
+  filter: blur(10px);
+  transition: all 0.5s;
+}

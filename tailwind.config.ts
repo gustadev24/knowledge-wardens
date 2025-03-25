@@ -61,9 +61,9 @@ const config = {
         },
       },
       backgroundImage: {
-        'main-desktop': "url('/images/bg/desktop.jpg')",
-        'main-mobile': "url('/images/bg/mobile.jpg')",
+        hero: "url('/images/bg/hero.webp')",
         'main-text': "url('/images/things/port.png')",
+        'auth-desktop': "url('/images/bg/auth.webp')",
         'footer-desktop': "url('/images/bg/fdesktop.jpg')",
         'footer-mobile': "url('/images/bg/fmobile.jpg')",
       },
