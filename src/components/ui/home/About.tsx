@@ -13,9 +13,8 @@ export function About() {
         <div className=" md:p-10 grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 place-content-center">
 
           <div className="bg-btn-bg border-yellow-500 border-8 md:p-4">
-            <p className="text-2xl font-text text-center text-white">
-              Lorem ipsum dolor sit amet consectetur. Ligula vel amet nullam cursus. Tincidunt quam ipsum tortor dictum sed. Velit magna nisl dignissim ullamcorper nibh malesuada iaculis sed. Faucibus at vitae lacus magna. Urna massa nisl elementum magnis porttitor enim adipiscing habitant arcu.
-              Nisi ut eu non enim quis blandit. Id tellus mattis nibh pellentesque accumsan urna. Sed gravida laoreet dignissim eu faucibus. Volutpat felis elit arcu tellus. Fermentum morbi bibendum sed placerat arcu congue lectus id netus.
+            <p className="text-2xl font-text text-white">
+              El poderoso hechicero ha poseído a tu amo y solo hay una manera de derrotarlo. Debes superar su antiguo conocimiento. Una leyenda es tu esperanza; busca a los guardianes del conocimiento y alcanza la victoria.
             </p>
           </div>
 

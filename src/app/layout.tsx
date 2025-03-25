@@ -2,6 +2,7 @@ import '@/app/globals.css';
 import { Silkscreen, Pixelify_Sans } from 'next/font/google';
 
 import { cn } from '@/lib/utils';
+import metadataConfig from '@/config/metadata';
 
 const silkscreen = Silkscreen({
   subsets: ['latin'],
@@ -14,15 +15,17 @@ const pixelifySans = Pixelify_Sans({
   variable: '--font-text',
 });
 
+export const metadata = metadataConfig;
+
 export default function RootLayout({ children }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es">
       <head />
       <body
         className={cn(
-          'min-h-screen bg-background font-text antialiased',
+          'min-h-screen bg-background font-text antialiased flex flex-col',
           silkscreen.variable,
           pixelifySans.variable,
         )}

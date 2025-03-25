@@ -1,6 +1,6 @@
 import { Session } from 'next-auth';
 import { Developers } from './Developers';
-import { Header } from './Header';
+import { Header } from './Hero';
 import { Technologies } from './Technologies';
 import { Footer } from './Footer';
 import { About } from './About';

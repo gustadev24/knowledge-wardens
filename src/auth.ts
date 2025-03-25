@@ -1,7 +1,7 @@
 import {
   CLIENT_ID_GITHUB, CLIENT_ID_GOOGLE, CLIENT_SECRET_GITHUB, CLIENT_SECRET_GOOGLE,
   NEXT_SECRET,
-} from '@/config';
+} from '@/config/env';
 import { PrismaAdapter } from '@auth/prisma-adapter';
 import NextAuth from 'next-auth';
 import GitHub from 'next-auth/providers/github';

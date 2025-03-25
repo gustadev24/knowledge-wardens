@@ -1,4 +1,4 @@
-import { MISTRAL_API_KEY } from '@/config';
+import { MISTRAL_API_KEY } from '@/config/env';
 // import { createAzure } from '@ai-sdk/azure';
 import { createMistral } from '@ai-sdk/mistral';
 import { generateObject } from 'ai';

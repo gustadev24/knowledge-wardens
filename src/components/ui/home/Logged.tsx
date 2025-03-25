@@ -1,25 +1,24 @@
-import Link from 'next/link';
+import Image from 'next/image';
 import Logout from './Logout';
 
-// type LoggedProps = {
-//   name: string;
-//   image: string;
-//   email: string;
-// };
+type LoggedProps = {
+  name: string;
+  image: string;
+};
 
-export function Logged() {
+export function Logged({ name, image }: LoggedProps) {
   return (
-    <div className="flex gap-2 justify-center items-center">
-      <Link
-        className="flex items-center gap-1 w-max
-          border-4 rounded-none text-3xl
-          bg-btn-bg border-btn-border text-white shadow-inner
-          hover:bg-white hover:text-black
-          pulse z-20"
-        href="/game"
-      >
-        Continue adventure
-      </Link>
+    <div className="flex gap-4 justify-center items-center bg-green-950 p-4">
+      <div className="flex items-center gap-2">
+        <Image
+          src={image}
+          alt={name}
+          width={50}
+          height={50}
+          className="rounded-full"
+        />
+        <h5 className="font-semibold text-white text-xl">{name}</h5>
+      </div>
       <Logout />
     </div>
   );

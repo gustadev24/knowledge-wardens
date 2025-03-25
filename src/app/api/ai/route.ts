@@ -1,5 +1,5 @@
 import { auth } from '@/auth';
-import { API_KEY, RESOURCE_NAME } from '@/config';
+import { API_KEY, RESOURCE_NAME } from '@/config/env';
 import { createAzure } from '@ai-sdk/azure';
 import { generateText } from 'ai';
 
