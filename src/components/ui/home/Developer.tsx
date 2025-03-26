@@ -30,37 +30,35 @@ export function Developer({ username, trueName, shortDescription }: DeveloperPro
   }, [username]);
 
   return (
-    <article className="p-4 w-60">
-      <a className="flex flex-col items-center gap-3" href={`https://github.com/${username}`}>
-        <div className="relative w-44 h-44 rounded-full overflow-hidden flex-shrink-0">
-          {
-            loading && <div className="absolute inset-0 bg-gray-200 animate-pulse rounded-full" />
-          }
+    <a className="flex flex-col items-center gap-3 hover:scale-105 transition-transform" href={`https://github.com/${username}`}>
+      <div className="relative w-44 h-44 rounded-full overflow-hidden flex-shrink-0">
+        {
+          loading && <div className="absolute inset-0 bg-gray-200 animate-pulse rounded-full" />
+        }
 
-          {!loading && imgUser && (
-            <Image
-              className="object-cover"
-              fill
-              sizes="(max-width: 600px) 500px"
-              priority={false}
-              src={imgUser}
-              alt={`${username}'s avatar`}
-            />
-          )}
-          {
-            !loading && !imgUser && (
-              <div className="absolute inset-0 bg-gray-200 rounded-full flex items-center justify-center">
-                <FaUser size="100%" className="text-white p-10" />
-              </div>
-            )
-          }
-        </div>
-        <div className="flex flex-col flex-1 gap-1">
-          <h5 className="text-xl font-semibold text-center">{trueName || username}</h5>
-          <p className="text-center">{shortDescription}</p>
-        </div>
-      </a>
+        {!loading && imgUser && (
+          <Image
+            className="object-cover"
+            fill
+            sizes="(max-width: 600px) 500px"
+            priority={false}
+            src={imgUser}
+            alt={`${username}'s avatar`}
+          />
+        )}
+        {
+          !loading && !imgUser && (
+            <div className="absolute inset-0 bg-gray-200 rounded-full flex items-center justify-center">
+              <FaUser size="100%" className="text-white p-10" />
+            </div>
+          )
+        }
+      </div>
+      <div className="flex flex-col flex-1 gap-1">
+        <h5 className="text-xl font-semibold text-center">{trueName || username}</h5>
+        <p className="text-center">{shortDescription}</p>
+      </div>
+    </a>
 
-    </article>
   );
 }
