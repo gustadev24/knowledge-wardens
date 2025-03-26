@@ -7,7 +7,7 @@ import { FiGithub } from 'react-icons/fi';
 
 export function Login() {
   return (
-    <div id="login" className="flex flex-row items-center gap-4 p-4">
+    <div id="login" className="flex flex-row bg-green-950 items-center gap-4 p-4">
       <span className="text-white text-3xl">Inicia Sesión:</span>
       <Button
         onClick={() => signIn('github')}
