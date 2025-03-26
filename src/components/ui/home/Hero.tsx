@@ -23,7 +23,7 @@ export function Header({ session }: HeaderProps) {
         </h1>
 
         <h2
-          className={cn('w-full text-center text-3xl lg:text-4xl xl:text-5xl font-title font-bold group text-blue-600 absolute -bottom-6 sm:-bottom-8 md:-bottom-10 overflow-visible', styles['teleporter-gradient'])}
+          className={cn('text-center text-3xl lg:text-4xl xl:text-5xl font-title font-bold group text-blue-600 absolute -bottom-6 sm:-bottom-8 md:-bottom-10 overflow-visible', styles['teleporter-gradient'])}
         >
           <Link
             href={session ? '/game' : '/#login'}
