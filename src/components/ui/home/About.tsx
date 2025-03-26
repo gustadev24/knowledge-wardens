@@ -10,10 +10,10 @@ export function About() {
       >
         <h1 className="text-3xl md:text-5xl font-title font-bold text-center">Sobre el proyecto</h1>
 
-        <div className=" md:p-10 grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 place-content-center">
+        <div className=" md:p-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 place-content-center">
 
           <div className="bg-btn-bg border-yellow-500 border-8 md:p-4">
-            <p className="text-2xl font-text text-white">
+            <p className="text-xl md:text-2xl text-pretty p-3 font-text text-white">
               El poderoso hechicero ha poseído a tu amo y solo hay una manera de derrotarlo. Debes superar su antiguo conocimiento. Una leyenda es tu esperanza; busca a los guardianes del conocimiento y alcanza la victoria.
             </p>
           </div>

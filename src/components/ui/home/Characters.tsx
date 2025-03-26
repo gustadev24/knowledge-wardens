@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const characters = [
   {
@@ -38,6 +38,7 @@ const characters = [
 
 export function Characters() {
   const [currentCharacter, setCurrentCharacter] = useState(0);
+  const carouselContainer = useRef<HTMLDivElement>(null);
 
   const handlePrevious = () => {
     setCurrentCharacter((prev) => (prev === 0 ? characters.length - 1 : prev - 1));
@@ -47,13 +48,20 @@ export function Characters() {
     setCurrentCharacter((prev) => (prev === characters.length - 1 ? 0 : prev + 1));
   };
 
+  useEffect(() => {
+    carouselContainer.current?.scrollTo({
+      left: carouselContainer.current.offsetWidth * currentCharacter,
+      behavior: 'smooth',
+    });
+  }, [currentCharacter, carouselContainer]);
+
   const character = characters[currentCharacter];
 
   return (
     <section className="bg-btn-bg" id="characters">
       <section
         className="bg-cover bg-center
-      min-h-[100vh] md:h-[100vh] w-full
+      min-h-[100vh] w-full
       flex flex-col justify-evenly items-center md:gap-4
       md:p-[4%] text-black transition-colors duration-500"
         style={{ backgroundColor: character.color }}
@@ -67,55 +75,46 @@ export function Characters() {
           <button
             type="button"
             onClick={handlePrevious}
-            className="text-xl md:text-4xl font-text text-bold text-center p-2 pulse"
+            className="text-xl md:text-4xl font-text text-bold text-center p-2 pulse grow-0"
           >
             {'< '}
           </button>
 
-          <div className="relative md:max-w-[50vw]
-          overflow-hidden max-w-[90vw]
-          "
+          <div
+            ref={carouselContainer}
+            className="overflow-x-scroll snap-mandatory snap-x grow basis-full flex"
           >
-            <div
-              className="flex transition-transform duration-700 ease-in-out"
-              style={{
-                transform: `translateX(-${currentCharacter * 100}%)`,
-              }}
-            >
-              {/* eslint-disable-next-line @typescript-eslint/no-shadow */}
-              {characters.map((character, index) => (
-                <div
-                  // eslint-disable-next-line react/no-array-index-key
-                  key={index}
-                  className="min-w-full flex flex-col items-center"
-                >
-                  <div className="md:p-4 bg-transparent">
-                    <h2 className="text-2xl font-bold text-center">
-                      {character.name}
-                    </h2>
-                    <p className="md:text-xl font-text text-center text-black w-[50vw]">
-                      {character.description}
-                    </p>
-                  </div>
-                  <div className="grid place-content-center">
-                    <Image
-                      src={character.image}
-                      alt={character.name}
-                      width={150}
-                      height={100}
-                    />
-                  </div>
+            {/* eslint-disable-next-line @typescript-eslint/no-shadow */}
+            {characters.map((character, index) => (
+              <div
+                // eslint-disable-next-line react/no-array-index-key
+                key={index}
+                className="flex flex-col xl:flex-row snap-center items-center size-full shrink-0 px-6 gap-x-16 gap-y-6 space-between"
+              >
+                <div className="md:p-4 bg-transparent flex flex-col gap-6">
+                  <h2 className="text-2xl font-bold">
+                    {character.name}
+                  </h2>
+                  <p className="md:text-xl font-text text-pretty text-black ">
+                    {character.description}
+                  </p>
                 </div>
-              ))}
-            </div>
+                <Image
+                  src={character.image}
+                  alt={character.name}
+                  width={150}
+                  height={100}
+                  className="xl:grow shrink-0 xl:basis-56"
+                />
+              </div>
+            ))}
           </div>
 
           <button
             type="button"
             onClick={handleNext}
             className="text-4xl font-text text-bold text-center p-2
-            pulse
-            "
+            pulse grow-0"
           >
             {'>'}
           </button>
