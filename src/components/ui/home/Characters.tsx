@@ -60,22 +60,21 @@ export function Characters() {
   return (
     <section className="bg-btn-bg" id="characters">
       <section
-        className="bg-cover bg-center
-      min-h-[100vh] w-full
+        className="bg-cover bg-center w-full
       flex flex-col justify-evenly items-center md:gap-4
       md:p-[4%] text-black transition-colors duration-500"
         style={{ backgroundColor: character.color }}
       >
         <h1 className="text-3xl md:text-5xl font-title font-bold">Personajes</h1>
 
-        <div className="flex items-center justify-between
-        md:gap-10 w-[90vw]"
+        <div className="flex items-center justify-between w-full
+        md:gap-10 min-h-96"
         >
 
           <button
             type="button"
             onClick={handlePrevious}
-            className="text-xl md:text-4xl font-text text-bold text-center p-2 pulse grow-0"
+            className="text-xl md:text-4xl font-text text-bold text-center p-2 pulse grow-0 basis-10"
           >
             {'< '}
           </button>
