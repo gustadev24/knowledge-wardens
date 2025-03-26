@@ -12,7 +12,7 @@ export default function Auth({
   const name: string = session?.user?.name || session?.user?.email || '';
   const image: string = session?.user?.image || '';
   return (
-    <div className="flex flex-col items-center p-8 pt-16 gap-4 bg-auth-desktop">
+    <div className="flex flex-col items-center p-8 pt-16 gap-4 bg-auth">
       {
         !session && <Login />
       }

@@ -4,13 +4,11 @@ import { FaGithub } from 'react-icons/fa';
 
 export function Footer() {
   return (
-    <footer className="bg-footer-mobile md:bg-footer-desktop
-    bg-cover h-[max-content]
-    width-[100vw] md:h-[350px] bg-center
+    <footer className="bg-footer
+    bg-cover
     flex
     flex-col justify-center items-center
-    md:flex-row md:justify-between md:items-center gap-4
-    p-[5%]"
+    md:flex-row md:justify-between md:items-center gap-4 p-10"
     >
       <div className="flex flex-col
       items-center md:items-start
@@ -64,10 +62,10 @@ export function Footer() {
 
       <div>
         <Image
-          src="/images/characters/changuito.png"
+          src="/images/characters/changuito.webp"
           alt="Witch"
-          width={250}
-          height={100}
+          width={200}
+          height={200}
         />
 
       </div>

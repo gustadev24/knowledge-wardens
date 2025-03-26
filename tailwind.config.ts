@@ -62,10 +62,8 @@ const config = {
       },
       backgroundImage: {
         hero: "url('/images/bg/hero.webp')",
-        'main-text': "url('/images/things/port.png')",
-        'auth-desktop': "url('/images/bg/auth.webp')",
-        'footer-desktop': "url('/images/bg/fdesktop.jpg')",
-        'footer-mobile': "url('/images/bg/fmobile.jpg')",
+        auth: "url('/images/bg/auth.webp')",
+        footer: "url('/images/bg/footer.webp')",
       },
       borderRadius: {
         lg: 'var(--radius)',

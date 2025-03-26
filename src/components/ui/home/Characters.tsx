@@ -8,31 +8,31 @@ const characters = [
     color: '#ABA6E1',
     name: 'Personaje 1',
     description: 'Lorem ipsum dolor sit amet consectetur. Ligula vel amet nullam cursus. Tincidunt quam ipsum tortor dictum sed. Velit magna nisl dignissim ullamcorper nibh malesuada iaculis sed. Faucibus at vitae lacus magna. Urna massa nisl elementum magnis porttitor enim adipiscing habitant arcu.',
-    image: '/images/characters/witch.png',
+    image: '/images/characters/witch.webp',
   },
   {
     color: '#546671',
     name: 'Personaje 2',
     description: 'Nisi ut eu non enim quis blandit. Id tellus mattis nibh pellentesque accumsan urna. Sed gravida laoreet dignissim eu faucibus. Volutpat felis elit arcu tellus. Fermentum morbi bibendum sed placerat arcu congue lectus id netus.',
-    image: '/images/characters/arquero.png',
+    image: '/images/characters/arquero.webp',
   },
   {
     color: '#DAAB7D',
     name: 'Personaje 3',
     description: 'Lorem ipsum dolor sit amet consectetur. Ligula vel amet nullam cursus. Tincidunt quam ipsum tortor dictum sed. Velit magna nisl dignissim ullamcorper nibh malesuada iaculis sed. Faucibus at vitae lacus magna. Urna massa nisl elementum magnis porttitor enim adipiscing habitant arcu.',
-    image: '/images/characters/changuito.png',
+    image: '/images/characters/changuito.webp',
   },
   {
     color: '#A07866',
     name: 'Personaje 4',
     description: 'Nisi ut eu non enim quis blandit. Id tellus mattis nibh pellentesque accumsan urna. Sed gravida laoreet dignissim eu faucibus. Volutpat felis elit arcu tellus. Fermentum morbi bibendum sed placerat arcu congue lectus id netus.',
-    image: '/images/characters/prince.png',
+    image: '/images/characters/prince.webp',
   },
   {
     color: '#9F96A3',
     name: 'Personaje 5',
     description: 'Lorem ipsum dolor sit amet consectetur. Ligula vel amet nullam cursus. Tincidunt quam ipsum tortor dictum sed. Velit magna nisl digniss im ullamcorper nibh malesuada iaculis sed. Faucibus at vitae lacus magna. Urna massa nisl elementum magnis porttitor enim adipiscing habitant arcu.',
-    image: '/images/characters/guardian.png',
+    image: '/images/characters/guardian.webp',
   },
 ];
 
