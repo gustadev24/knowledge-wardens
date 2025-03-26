@@ -23,11 +23,11 @@ export function Header({ session }: HeaderProps) {
         </h1>
 
         <h2
-          className={cn('w-full text-center text-3xl lg:text-4xl xl:text-5xl font-title font-bold group text-blue-600 absolute -bottom-20 md:-bottom-[6.5rem] overflow-visible', styles['teleporter-gradient'])}
+          className={cn('w-full text-center text-3xl lg:text-4xl xl:text-5xl font-title font-bold group text-blue-600 absolute -bottom-6 sm:-bottom-8 md:-bottom-10 overflow-visible', styles['teleporter-gradient'])}
         >
           <Link
             href={session ? '/game' : '/#login'}
-            className="flex flex-col items-center gap-8 p-4"
+            className="flex flex-col items-center gap-16"
           >
             <span className="scale-75 translate-y-12 group-hover:scale-105 group-hover:translate-y-0 transition-transform max-w-56 md:max-w-80 text-center">
               { session ? 'Continuar aventura' : 'Empieza tu aventura' }
@@ -37,7 +37,7 @@ export function Header({ session }: HeaderProps) {
               alt="Teleport"
               width={300}
               height={200}
-              className="w-[200px] md:w-[300px]
+              className="w-48 sm:w-64 md:w-80
         z-10"
             />
           </Link>
