@@ -6,6 +6,8 @@ import { Footer } from './Footer';
 import { About } from './About';
 import { Characters } from './Characters';
 import Auth from './Auth';
+import MouseParticles from 'react-mouse-particles'
+
 
 type HomeProps = {
   session?: Session | null;
@@ -24,6 +26,7 @@ export function Home({ session }: HomeProps) {
         <Technologies />
       </main>
       <Footer />
+      <MouseParticles g={1} color="random" cull="col,image-wrapper"/>
     </>
   );
 }

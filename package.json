@@ -27,6 +27,7 @@
     "react-dom": "19.0.0",
     "react-hook-form": "^7.52.2",
     "react-icons": "^5.2.1",
+    "react-mouse-particles": "^1.1.5",
     "react-unity-webgl": "^9.8.0",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
