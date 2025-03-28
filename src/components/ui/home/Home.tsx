@@ -6,8 +6,7 @@ import { Footer } from './Footer';
 import { About } from './About';
 import { Characters } from './Characters';
 import Auth from './Auth';
-import MouseParticles from 'react-mouse-particles'
-
+import MouseParticlesClient from './MouseParticlesClient';
 
 type HomeProps = {
   session?: Session | null;
@@ -19,14 +18,13 @@ export function Home({ session }: HomeProps) {
       <Header session={session} />
       <Auth session={session} />
       <main>
-        {/* Algunas imágenes del juego */}
         <About />
         <Characters />
         <Developers />
         <Technologies />
       </main>
       <Footer />
-      <MouseParticles g={1} color="random" cull="col,image-wrapper"/>
+      <MouseParticlesClient />
     </>
   );
 }
