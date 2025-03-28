@@ -29,7 +29,7 @@ export function Header({ session }: HeaderProps) {
             href={session ? '/game' : '/#login'}
             className="flex flex-col items-center gap-16"
           >
-            <span className="scale-75 translate-y-12 group-hover:scale-105 group-hover:translate-y-0 transition-transform max-w-56 md:max-w-80 text-center">
+            <span className="scale-75 group-hover:scale-90 transition-transform duration-300 ease-out max-w-56 md:max-w-80 text-center">
               { session ? 'Continuar aventura' : 'Empieza tu aventura' }
             </span>
             <Image
