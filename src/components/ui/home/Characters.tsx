@@ -6,32 +6,32 @@ import { useEffect, useRef, useState } from 'react';
 const characters = [
   {
     color: '#ABA6E1',
-    name: 'Personaje 1',
-    description: 'Lorem ipsum dolor sit amet consectetur. Ligula vel amet nullam cursus. Tincidunt quam ipsum tortor dictum sed. Velit magna nisl dignissim ullamcorper nibh malesuada iaculis sed. Faucibus at vitae lacus magna. Urna massa nisl elementum magnis porttitor enim adipiscing habitant arcu.',
+    name: 'La Hechicera - Guardiana de los Secretos Perdidos',
+    description: 'En los confines del fortín, la Hechicera protege los textos más antiguos jamás escritos. Su magia fluye desde el conocimiento ancestral y no del combate, y su misión es enseñar al discípulo a romper los sellos del poder arcano que mantienen cautiva la mente de su maestro.',
     image: '/images/characters/witch.webp',
   },
   {
     color: '#546671',
-    name: 'Personaje 2',
-    description: 'Nisi ut eu non enim quis blandit. Id tellus mattis nibh pellentesque accumsan urna. Sed gravida laoreet dignissim eu faucibus. Volutpat felis elit arcu tellus. Fermentum morbi bibendum sed placerat arcu congue lectus id netus.',
+    name: 'El Arquero Bestial - Guardián del Instinto y la Precisión',
+    description: 'Nacido de la unión de lo salvaje y lo humano, este arquero, mitad bestia, enseña la importancia del equilibrio entre mente y cuerpo. Con su ojo agudo y sentidos inigualables, instruye al discípulo en la percepción y velocidad necesarias para enfrentar al mago poseído.',
     image: '/images/characters/arquero.webp',
   },
   {
     color: '#DAAB7D',
-    name: 'Personaje 3',
-    description: 'Lorem ipsum dolor sit amet consectetur. Ligula vel amet nullam cursus. Tincidunt quam ipsum tortor dictum sed. Velit magna nisl dignissim ullamcorper nibh malesuada iaculis sed. Faucibus at vitae lacus magna. Urna massa nisl elementum magnis porttitor enim adipiscing habitant arcu.',
+    name: 'El Changuito Travieso - Guardián de la Astucia',
+    description: 'Representa el ingenio y la improvisación. Con un estilo poco convencional, el Changuito Travieso obliga a su aprendiz a pensar fuera de lo común, demostrando que en ocasiones, la astucia es la clave para superar a un enemigo que conoce todas las reglas.',
     image: '/images/characters/changuito.webp',
   },
   {
     color: '#A07866',
-    name: 'Personaje 4',
-    description: 'Nisi ut eu non enim quis blandit. Id tellus mattis nibh pellentesque accumsan urna. Sed gravida laoreet dignissim eu faucibus. Volutpat felis elit arcu tellus. Fermentum morbi bibendum sed placerat arcu congue lectus id netus.',
+    name: 'El Príncipe Errante - Guardián de la Voluntad',
+    description: 'Habiendo dejado su trono para comprender que la verdadera grandeza reside en la determinación, este príncipe errante fortalece la voluntad del discípulo. Su enseñanza es crucial, pues la batalla contra el mago poseído exige un espíritu inquebrantable, tanto física como mentalmente.',
     image: '/images/characters/prince.webp',
   },
   {
     color: '#9F96A3',
-    name: 'Personaje 5',
-    description: 'Lorem ipsum dolor sit amet consectetur. Ligula vel amet nullam cursus. Tincidunt quam ipsum tortor dictum sed. Velit magna nisl digniss im ullamcorper nibh malesuada iaculis sed. Faucibus at vitae lacus magna. Urna massa nisl elementum magnis porttitor enim adipiscing habitant arcu.',
+    name: 'El Guardián Ancestral - Guardián del Tiempo y la Paciencia',
+    description: 'Forjado en la era de los titanes, el Guardián Ancestral ha visto a incontables discípulos venir y fallar. Su lección más dura es la paciencia, demostrando que actuar en el momento preciso es esencial para derrotar al mago poseído.',
     image: '/images/characters/guardian.webp',
   },
 ];
