@@ -81,12 +81,10 @@ export function Characters() {
 
           <div
             ref={carouselContainer}
-            className="overflow-x-scroll snap-mandatory snap-x grow basis-full flex"
+            className="overflow-x-scroll items-center no-scrollbar snap-mandatory snap-x grow basis-full flex"
           >
-            {/* eslint-disable-next-line @typescript-eslint/no-shadow */}
             {characters.map((character, index) => (
               <div
-                // eslint-disable-next-line react/no-array-index-key
                 key={index}
                 className="flex flex-col xl:flex-row snap-center items-center size-full shrink-0 px-6 gap-x-16 gap-y-6 space-between"
               >
