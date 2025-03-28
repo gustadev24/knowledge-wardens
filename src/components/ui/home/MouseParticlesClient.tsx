@@ -29,7 +29,7 @@ export default function MouseParticlesClient() {
         zIndex: 9999,
       }}
     >
-      <DynamicMouseParticles g={1} color="random" />
+      <DynamicMouseParticles g={1} color={["#37B8EF", "#2F9ECD", "#39BEF7", "#2783AB", "#1F6989", "#37B8EF", "#2F9ECD", "#39BEF7", "#2783AB", "#1F6989", "#FFFFFF", "#F7EF39"]} />
     </div>
   );
 }
