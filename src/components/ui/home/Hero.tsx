@@ -27,19 +27,41 @@ export function Header({ session }: HeaderProps) {
         >
           <Link
             href={session ? '/game' : '/#login'}
-            className="flex flex-col items-center gap-16"
+            className="group flex flex-col items-center gap-16"
           >
             <span className="scale-75 group-hover:scale-90 transition-transform duration-300 ease-out max-w-56 md:max-w-80 text-center">
-              { session ? 'Continuar aventura' : 'Empieza tu aventura' }
+              {session ? 'Continuar aventura' : 'Empieza tu aventura'}
             </span>
-            <Image
-              src="/images/things/teleporter.webp"
-              alt="Teleport"
-              width={300}
-              height={200}
-              className="w-48 sm:w-64 md:w-80
-        z-10"
-            />
+
+            <div className="relative">
+              <Image
+                src="/images/things/teleporter.webp"
+                alt="Teleport"
+                width={300}
+                height={200}
+                className="w-48 sm:w-64 md:w-80 z-10"
+              />
+              <div
+                className="
+                  absolute
+                  inset-0
+                  flex
+                  items-center
+                  justify-center
+                  pointer-events-none
+                  opacity-0
+                  group-hover:opacity-100
+                  transition-opacity
+                  duration-300
+                  ease-out
+                "
+              >
+                <span className="relative flex h-24 w-24">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75 blur-sm" />
+                </span>
+              </div>
+            </div>
+
           </Link>
         </h2>
       </div>
