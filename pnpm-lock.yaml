@@ -59,6 +59,9 @@ importers:
       react-icons:
         specifier: ^5.2.1
         version: 5.5.0(react@19.0.0)
+      react-mouse-particles:
+        specifier: ^1.1.5
+        version: 1.1.5
       react-unity-webgl:
         specifier: ^9.8.0
         version: 9.8.0(react@19.0.0)
@@ -2684,6 +2687,10 @@ packages:
     resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
 
+  power-mode-input@1.0.3:
+    resolution: {integrity: sha512-53f2x4htVIkc3LjWgoGVaHtx4Oz7YE58nx6ayYsuUqJQvjyotXn+dyp1xjmBnZ2KRjIHjWpmZocBAGKWhwXQPA==}
+    engines: {node: '>=8', npm: '>=5'}
+
   preact-render-to-string@5.2.3:
     resolution: {integrity: sha512-aPDxUn5o3GhWdtJtW0svRC2SS/l8D9MAgo2+AWml+BhDImb27ALf04Q2d+AHqUUOc6RdSXFIBVa2gxzgMKgtZA==}
     peerDependencies:
@@ -2730,6 +2737,9 @@ packages:
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
 
+  proton-engine@4.2.1:
+    resolution: {integrity: sha512-c72hgcnwMyyvUoy7Jq/HX3HQZnAo5MUNvFbyZHiWZrwcERX9+lYzM9YyT0iueXVAJpt+r8nrPan9F3HTXj7IsA==}
+
   pump@3.0.2:
     resolution: {integrity: sha512-tUPXtzlGM8FE3P0ZL6DVs/3P58k9nk8/jZeQCurTJylQA8qFYzHFfhBJkuqyE0FifOsQ0uKWekiZ5g8wtr28cw==}
 
@@ -2739,6 +2749,9 @@ packages:
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
+
+  raf-manager@0.3.3:
+    resolution: {integrity: sha512-yucX9uvgW8hWvL5uvNKncPAUerV9bcX9IxW6pFyP4wjSH8BP3JZPrK+gEpiHqJ/GJ+R8PBw77hLHlX5faGpqVA==}
 
   raw-body@2.4.1:
     resolution: {integrity: sha512-9WmIKF6mkvA0SLmA2Knm9+qj89e+j1zqgyn8aXGd7+nAduPoqgI9lO57SAZNn/Byzo5P7JhXTyg9PzaJbH73bA==}
@@ -2762,6 +2775,14 @@ packages:
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+
+  react-mouse-particles@1.1.3:
+    resolution: {integrity: sha512-IxQk01PQisj5G8xaPVSOytg3gT7/taLzxDL7EXbwdijTGU3bXgxtYwBfcUBpiO4WWGNcclaIiUCWXjvlrv8Fgw==}
+    engines: {node: '>=8', npm: '>=5'}
+
+  react-mouse-particles@1.1.5:
+    resolution: {integrity: sha512-LXwKN00cWQCTHgbRR2ywKZVSkXaYcZrb3KKU/Qaz4suV5FfE3t5dkgZ9qjdZ+0Bu0XdO8UPRCFGGMV7uBBpjQg==}
+    engines: {node: '>=8', npm: '>=5'}
 
   react-unity-webgl@9.8.0:
     resolution: {integrity: sha512-YKy/0jOrTYXkfFx2nh6POECk4tWo8zHJhJ6hf798aeuNcllFn2PJUCmPAiXpZnfa8vDSpb8qwNawGTyjVuOjZw==}
@@ -6104,6 +6125,11 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
+  power-mode-input@1.0.3:
+    dependencies:
+      proton-engine: 4.2.1
+      raf-manager: 0.3.3
+
   preact-render-to-string@5.2.3(preact@10.11.3):
     dependencies:
       preact: 10.11.3
@@ -6145,6 +6171,8 @@ snapshots:
       object-assign: 4.1.1
       react-is: 16.13.1
 
+  proton-engine@4.2.1: {}
+
   pump@3.0.2:
     dependencies:
       end-of-stream: 1.4.4
@@ -6153,6 +6181,8 @@ snapshots:
   punycode@2.3.1: {}
 
   queue-microtask@1.2.3: {}
+
+  raf-manager@0.3.3: {}
 
   raw-body@2.4.1:
     dependencies:
@@ -6175,6 +6205,18 @@ snapshots:
       react: 19.0.0
 
   react-is@16.13.1: {}
+
+  react-mouse-particles@1.1.3:
+    dependencies:
+      proton-engine: 4.2.1
+      raf-manager: 0.3.3
+
+  react-mouse-particles@1.1.5:
+    dependencies:
+      power-mode-input: 1.0.3
+      proton-engine: 4.2.1
+      raf-manager: 0.3.3
+      react-mouse-particles: 1.1.3
 
   react-unity-webgl@9.8.0(react@19.0.0):
     dependencies:
