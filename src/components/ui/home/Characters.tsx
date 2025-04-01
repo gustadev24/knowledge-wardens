@@ -73,7 +73,7 @@ export function Characters() {
           <button
             type="button"
             onClick={handlePrevious}
-            className="absolute left-0 z-10 text-white text-3xl font-bold 
+            className="absolute left-0 z-10 text-white text-3xl font-bold
                        bg-gray-700 rounded-full h-12 w-12 flex items-center justify-center
                        hover:bg-gray-600 transition-all"
             aria-label="Anterior"
@@ -85,13 +85,13 @@ export function Characters() {
             ref={carouselContainer}
             className="overflow-x-scroll no-scrollbar snap-x snap-mandatory w-full flex"
           >
-            {characters.map((character, index) => (
+            {characters.map((character) => (
               <div
-                key={index}
+                key={character.name}
                 className="snap-center flex-shrink-0 w-full flex items-center justify-center"
               >
                 <div
-                  className="flex flex-col md:flex-row bg-white rounded-lg shadow-xl overflow-hidden 
+                  className="flex flex-col md:flex-row bg-white rounded-lg shadow-xl overflow-hidden
                              w-11/12 md:w-10/12 border-l-8"
                   style={{ borderColor: character.color }}
                 >
@@ -121,7 +121,7 @@ export function Characters() {
           <button
             type="button"
             onClick={handleNext}
-            className="absolute right-0 z-10 text-white text-3xl font-bold 
+            className="absolute right-0 z-10 text-white text-3xl font-bold
                        bg-gray-700 rounded-full h-12 w-12 flex items-center justify-center
                        hover:bg-gray-600 transition-all"
             aria-label="Siguiente"
