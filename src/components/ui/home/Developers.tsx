@@ -42,7 +42,7 @@ export function Developers() {
   return (
     <section className="p-8 max-w-full overflow-hidden flex flex-col gap-10">
       <h1 className="text-3xl md:text-5xl font-title font-bold text-center mb-8">Desarrolladores</h1>
-      <div className="flex flex-wrap justify-center gap-12">
+      <div className="flex flex-wrap justify-center gap-12 ">
         {
           developers.map((developer) => (
             <Developer key={developer.username} {...developer} />

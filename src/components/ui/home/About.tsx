@@ -2,36 +2,31 @@ import Image from 'next/image';
 
 export function About() {
   return (
-    <section className="bg-btn-bg" id="about">
-      <section className="bg-accent bg-cover bg-center
-    min-h-[100vh] md:h-[100vh] w-full container
-    flex flex-col justify-evenly items-center gap-4
-    p-[4%] text-black"
-      >
-        <h1 className="text-3xl md:text-5xl font-title font-bold text-center">Sobre el proyecto</h1>
-
-        <div className=" md:p-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 place-content-center">
-
-          <div className="bg-btn-bg border-yellow-500 border-8 md:p-4">
-            <p className="text-xl md:text-2xl text-pretty p-3 font-text text-white">
-              El poderoso hechicero ha poseído a tu amo y solo hay una manera de derrotarlo. Debes superar su antiguo conocimiento. Una leyenda es tu esperanza; busca a los guardianes del conocimiento y alcanza la victoria.
-            </p>
-          </div>
-
-          <div className="grid place-content-center">
+    <section id="about" className="bg-gray-800 h-screen flex items-center justify-center py-16 px-6">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-10">
+          Sobre el Proyecto
+        </h2>
+        <div className="bg-gray-700 rounded-lg shadow-xl overflow-hidden flex flex-col md:flex-row max-w-4xl mx-auto">
+          <div className="md:w-1/2">
             <Image
               src="/images/about.png"
-              alt="About"
-              width={350}
-              height={100}
-              className="w-200 md:w-[350]"
+              alt="Sobre el proyecto"
+              width={600}
+              height={400}
+              className="object-cover w-full h-full"
             />
-
+          </div>
+          <div className="md:w-1/2 p-6 flex flex-col justify-center">
+            <p className="text-lg md:text-xl text-white leading-relaxed mb-4">
+              El poderoso hechicero ha poseído a tu amo y solo hay una manera de derrotarlo.
+            </p>
+            <p className="text-lg md:text-xl text-white leading-relaxed">
+              Debes superar su antiguo conocimiento. Una leyenda es tu esperanza; busca a los guardianes del conocimiento y alcanza la victoria.
+            </p>
           </div>
         </div>
-
-      </section>
+      </div>
     </section>
-
   );
 }
