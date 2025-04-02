@@ -6,7 +6,7 @@ import { Footer } from './Footer';
 import { About } from './About';
 import { Characters } from './Characters';
 import Auth from './Auth';
-import MouseParticlesClient from './MouseParticlesClient';
+import MouseParticlesClient from '../../particles/MouseParticlesClient';
 
 type HomeProps = {
   session?: Session | null;
