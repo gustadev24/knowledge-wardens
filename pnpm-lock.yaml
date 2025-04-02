@@ -47,6 +47,12 @@ importers:
       next-auth:
         specifier: 5.0.0-beta.25
         version: 5.0.0-beta.25(next@15.2.3(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
+      proton-engine:
+        specifier: ^7.1.5
+        version: 7.1.5
+      raf-manager:
+        specifier: ^0.3.3
+        version: 0.3.3
       react:
         specifier: 19.0.0
         version: 19.0.0
@@ -2739,6 +2745,9 @@ packages:
 
   proton-engine@4.2.1:
     resolution: {integrity: sha512-c72hgcnwMyyvUoy7Jq/HX3HQZnAo5MUNvFbyZHiWZrwcERX9+lYzM9YyT0iueXVAJpt+r8nrPan9F3HTXj7IsA==}
+
+  proton-engine@7.1.5:
+    resolution: {integrity: sha512-mslwlyYaFgh2K0XmVwl4XOV8O2vxr15xjiuJ9LP4eR5IyrjE5MDSLtcc1ADjEF0x7H08JNx6+jBOdRqpkLq3EA==}
 
   pump@3.0.2:
     resolution: {integrity: sha512-tUPXtzlGM8FE3P0ZL6DVs/3P58k9nk8/jZeQCurTJylQA8qFYzHFfhBJkuqyE0FifOsQ0uKWekiZ5g8wtr28cw==}
@@ -6172,6 +6181,8 @@ snapshots:
       react-is: 16.13.1
 
   proton-engine@4.2.1: {}
+
+  proton-engine@7.1.5: {}
 
   pump@3.0.2:
     dependencies:

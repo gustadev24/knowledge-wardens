@@ -23,6 +23,8 @@
     "lucide-react": "^0.419.0",
     "next": "15.2.3",
     "next-auth": "5.0.0-beta.25",
+    "proton-engine": "^7.1.5",
+    "raf-manager": "^0.3.3",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-hook-form": "^7.52.2",
